@@ -1,7 +1,4 @@
 import { Layers, Globe, Flag } from "lucide-react"
-import { Montserrat_Alternates } from "next/font/google";
-
-const montserratAlternates = Montserrat_Alternates({ weight: ["400", "700"], subsets: ["latin"] });
 
 export default function About() {
     return (
@@ -9,8 +6,8 @@ export default function About() {
             <section className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-40 min-h-screen px-4 md:px-0">
                 <img src="/home-img-square.png" className="w-half md:w-150 max-w-sm md:max-w-none rounded" />
                 <div className="flex flex-col gap-6 max-w-xl">
-                    <h3 className={`text-sm md:text-base tracking-wide`}>ABOUT PRINTFORGE</h3>
-                    <h1 className={`text-3xl md:text-5xl md:leading-[3.25rem] font-bold ${montserratAlternates.className}`}>Empowering<br />makers worldwide</h1>
+                    <h3 className="text-sm md:text-base tracking-wide">ABOUT PRINTFORGE</h3>
+                    <h1 className="text-3xl md:text-5xl md:leading-[3.25rem] font-bold">Empowering<br />makers worldwide</h1>
                     <p className="text-lg md:text-xl text-gray-900">
                         Founded in 2023, PrintForge has quickly<br />become the go-to platform for 3D printing enthusiasts,makers,
                         and professional designers to share and discover amazing STL<br />files for 3D printing.
@@ -24,24 +21,24 @@ export default function About() {
             <section>
                 <div className="flex justify-evenly py-30 border-t border-b border-gray-300">
                     <div className="flex flex-col w-1/5">
-                        <h2 className={`flex items-center gap-2 text-2xl font-bold text-gray-900 ${montserratAlternates.className}`}><Layers />100K+ Models</h2>
+                        <h2 className="flex items-center gap-2 text-2xl font-bold text-gray-900"><Layers />100K+ Models</h2>
                         <p className="text-lg mt-2">Access our vast library of<br />community-created 3D models, from practical tools to artistic creations.</p>
                     </div>
                     <div className="border h-30 text-gray-600 opacity-80"></div>
                     <div className="flex flex-col w-1/5">
-                        <h2 className={`flex items-center gap-2 text-2xl font-bold text-gray-900 ${montserratAlternates.className}`}><Globe />Active Community</h2>
+                        <h2 className="flex items-center gap-2 text-2xl font-bold text-gray-900"><Globe />Active Community</h2>
                         <p className="text-lg mt-2">Join thousands of makers who share<br /> tips, provide feedback, and collaborate on projects.</p>
                     </div>
                     <div className="border h-30 text-gray-600 opacity-80"></div>
                     <div className="flex flex-col w-1/5">
-                        <h2 className={`flex items-center gap-2 text-2xl font-bold text-gray-900 ${montserratAlternates.className}`}><Flag />Free to Use</h2>
+                        <h2 className="flex items-center gap-2 text-2xl font-bold text-gray-900"><Flag />Free to Use</h2>
                         <p className="text-lg mt-2">Most models are free to download, with optional premium features for power users.</p>
                     </div>
                 </div>
             </section>
             <section>
                 <div className="flex flex-col items-center py-15 gap-10">
-                    <h1 className={`text-5xl md:text-5xl font-bold ${montserratAlternates.className}`}>Our vision</h1>
+                    <h1 className="text-5xl md:text-5xl font-bold">Our vision</h1>
                     <p className="text-lg md:text-2xl text-gray-900">
                         At PrintForge, we believe that 3D printing is revolutionizing<br />
                         the way we create, prototype,and manufacture. Our platform<br />
