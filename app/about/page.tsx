@@ -1,10 +1,18 @@
+import Image from "next/image"
+
 import { Layers, Globe, Flag } from "lucide-react"
 
 export default function About() {
     return (
         <main>
-            <section className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-40 min-h-screen px-4 md:px-0">
-                <img src="/home-img-square.png" className="w-half md:w-150 max-w-sm md:max-w-none rounded" />
+            <section className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-55 min-h-screen px-4 md:px-0">
+                <Image
+                    src="/home-img-square.png"
+                    alt="PrintForge Community - A group of makers collaborating on 3D printing projects"
+                    width={500}
+                    height={500}
+                    className="w-half md:w-150 max-w-sm md:max-w-none rounded"
+                />
                 <div className="flex flex-col gap-6 max-w-xl">
                     <h3 className="text-sm md:text-base tracking-wide">ABOUT PRINTFORGE</h3>
                     <h1 className="text-3xl md:text-5xl md:leading-[3.25rem] font-bold">Empowering<br />makers worldwide</h1>

@@ -1,18 +1,24 @@
+import Image from "next/image"
+
 export default function Header() {
     return (
         <header className="flex justify-between px-10 py-2">
             <a href="/">
                 <div className="relative">
                     {/* Desktop logo */}
-                    <img
+                    <Image
                         src="/printforge-logo.svg"
                         alt="PrintForge Logo"
+                        width={200}
+                        height={80}
                         className="w-[200px] h-auto hidden md:block"
                     />
                     {/* Mobile logo */}
-                    <img
+                    <Image
                         src="/printforge-logo-icon.svg"
                         alt="PrintForge Logo"
+                        width={40}
+                        height={40}
                         className="w-[40px] h-auto block md:hidden"
                     />
                 </div>
