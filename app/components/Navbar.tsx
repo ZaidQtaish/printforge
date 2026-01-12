@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 
-export default function Header() {
+export default function Navbar() {
     return (
         <header className="flex justify-between px-10 py-2">
             <Link href="/">
