@@ -1,9 +1,10 @@
 import Image from "next/image"
+import Link from "next/link"
 
 export default function Header() {
     return (
         <header className="flex justify-between px-10 py-2">
-            <a href="/">
+            <Link href="/">
                 <div className="relative">
                     {/* Desktop logo */}
                     <Image
@@ -22,10 +23,10 @@ export default function Header() {
                         className="w-[40px] h-auto block md:hidden"
                     />
                 </div>
-            </a>
+            </Link>
             <nav className="flex items-center gap-8 text-lg font-medium text-gray-600">
-                <a href="/products" className="hover:text-gray-600 transition">3D MODELS</a>
-                <a href="/about" className="hover:text-gray-600 transition">ABOUT</a>
+                <Link href="/products" className="hover:text-gray-600 transition">3D MODELS</Link>
+                <Link href="/about" className="hover:text-gray-600 transition">ABOUT</Link>
             </nav>
         </header>
     );
