@@ -1,3 +1,4 @@
+import { RootLayoutProps } from "./types";
 import { Albert_Sans, Montserrat_Alternates } from "next/font/google";
 import "./globals.css";
 import Header from "./header";
@@ -6,11 +7,7 @@ const albertSans = Albert_Sans({ subsets: ["latin"] });
 
 const montserratAlternates = Montserrat_Alternates({ subsets: ["latin"], weight: ["400", "700"], variable: "--montserrat" })
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <body className={`${albertSans.className} ${montserratAlternates.variable}`}>

@@ -25,7 +25,7 @@ export default function Header() {
                 </div>
             </Link>
             <nav className="flex items-center gap-8 text-lg font-medium text-gray-600">
-                <Link href="/products" className="hover:text-gray-600 transition">3D MODELS</Link>
+                <Link href="/3d-models" className="hover:text-gray-600 transition">3D MODELS</Link>
                 <Link href="/about" className="hover:text-gray-600 transition">ABOUT</Link>
             </nav>
         </header>
