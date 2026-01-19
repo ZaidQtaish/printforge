@@ -31,7 +31,7 @@ export default function Navbar() {
                 </div>
             </Link>
             <nav className="flex items-center gap-8 text-lg">
-                <NavButton href="/3d-models" isActive={pathname === "/3d-models"}>3D MODELS</NavButton>
+                <NavButton href="/3d-models" isActive={pathname.startsWith("/3d-models")}>3D MODELS</NavButton>
                 <NavButton href="/about" isActive={pathname === "/about"}>ABOUT</NavButton>
             </nav>
         </header>

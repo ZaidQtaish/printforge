@@ -1,5 +1,3 @@
-"use client";
-
 import ModelsSidebar from "../components/ModelsSidebar";
 
 export default function ModelsNavigation({ children }: { children: React.ReactNode }) {
