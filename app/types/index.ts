@@ -18,3 +18,26 @@ export type PillProps = {
     children: ReactNode
     className?: string
 }
+
+export type Category = {
+    slug: string
+    displayName: string
+}
+
+export type CategoryPageProps = {
+    params: Promise<{
+        categoryName: string
+    }>
+}
+
+export type ModelsGridProps = {
+    title: string
+    models: Model[]
+}
+
+export type NavButtonProps = {
+    href: string
+    children: ReactNode
+    isActive: boolean
+    variant?: "header" | "sidebar"
+}

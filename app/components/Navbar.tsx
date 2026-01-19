@@ -1,19 +1,15 @@
-"use client"
+"use client";
 
 import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
+import NavButton from "./NavButton"
 
 export default function Navbar() {
     const pathname = usePathname();
 
-    const getLinkClass = (href: string) =>
-        pathname === href
-            ? "text-orange-500 border-b-2 border-orange-500"
-            : "hover:text-gray-600";
-
     return (
-        <header className="flex justify-between px-10 py-2">
+        <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200 flex justify-between px-10 py-2">
             <Link href="/">
                 <div className="relative">
                     {/* Desktop logo */}
@@ -34,9 +30,9 @@ export default function Navbar() {
                     />
                 </div>
             </Link>
-            <nav className="flex items-center gap-8 text-lg font-medium text-gray-600">
-                <Link href="/3d-models" className={`transition-all duration-300 ${getLinkClass("/3d-models")}`}>3D MODELS</Link>
-                <Link href="/about" className={`transition-all duration-300 ${getLinkClass("/about")}`}>ABOUT</Link>
+            <nav className="flex items-center gap-8 text-lg">
+                <NavButton href="/3d-models" isActive={pathname === "/3d-models"}>3D MODELS</NavButton>
+                <NavButton href="/about" isActive={pathname === "/about"}>ABOUT</NavButton>
             </nav>
         </header>
     );
