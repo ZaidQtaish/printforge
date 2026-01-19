@@ -10,7 +10,9 @@ export default function NavButton({ href, children, isActive, variant = "header"
         : "hover:text-gray-600";
 
     return (
-        <Link href={href} className={`transition-all duration-300 font-medium text-gray-600 ${activeClass}`}>
+        <Link
+            href={href}
+            className={`transition-all duration-300 font-medium text-gray-600 whitespace-nowrap ${activeClass}`}>
             {children}
         </Link>
     )

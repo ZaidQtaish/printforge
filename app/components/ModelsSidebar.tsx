@@ -9,8 +9,8 @@ export default function ModelsSidebar() {
     const categories = getAllCategories();
 
     return (
-        <aside className="w-full md:w-48 md:sticky md:top-65 md:h-fit">
-            <nav className="flex gap-4 overflow-x-auto md:flex-col md:gap-3 md:py-4">
+        <aside className="w-full md:w-48 md:sticky md:top-1/2 md:-translate-y-1/2 md:h-fit">
+            <nav className="flex gap-4 overflow-x-auto md:flex-col md:gap-4 md:py-4 lg:text-lg md:text-base">
                 <NavButton href="/3d-models" isActive={pathname === "/3d-models"} variant="sidebar">ALL</NavButton>
                 {categories.map(category =>
                     <NavButton
