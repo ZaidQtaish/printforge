@@ -1,5 +1,4 @@
 import Image from "next/image"
-
 import { Layers, Globe, Flag } from "lucide-react"
 
 export default function About() {
