@@ -10,7 +10,7 @@ export default function ModelsSidebar() {
 
     return (
         <aside className="w-full md:w-48 md:sticky md:top-55 md:h-fit">
-            <nav className="flex gap-4 overflow-x-auto md:flex-col md:gap-4 md:py-4 lg:text-lg md:text-base">
+            <nav className="py-4 px-2 flex gap-4 overflow-x-auto md:flex-col md:px-0 md:gap-4 lg:text-lg md:text-base">
                 <NavButton href="/3d-models" isActive={pathname === "/3d-models"} variant="sidebar">ALL</NavButton>
                 {categories.map(category =>
                     <NavButton

@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export default function Home() {
   return (
-    <main className="flex flex-col md:flex-row-reverse items-center justify-center gap-10 md:gap-25 min-h-screen px-4 md:px-0">
+    <main className="flex flex-col md:flex-row-reverse items-center justify-center gap-10 md:gap-25 min-h-screen py-10 px-4 md:px-0">
       <Image
         src="/home-img.png"
         alt="3D printing models and designs"

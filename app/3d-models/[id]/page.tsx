@@ -12,7 +12,7 @@ export default async function ModelDetailPage({ params }: { params: Promise<{ id
     }
 
     return (
-        <section className="mt-10 mx-5">
+        <section className="mt-10 mx-5 p-y-10">
             <div className="flex items-center gap-9 flex-col md:flex-row">
                 <Image
                     src="/placeholder.png"

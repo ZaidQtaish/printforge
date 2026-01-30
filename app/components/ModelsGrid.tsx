@@ -5,7 +5,7 @@ import SearchBar from "./SearchBar"
 export default function ModelsGrid({ title, models, searchDefaultValue }: ModelsGridProps) {
     return (
         <div className="container px-4 py-8 mx-auto">
-            <div className="flex justify-between">
+            <div className="flex flex-col-reverse gap-5 md:flex-row md:justify-between">
                 <h1 className="mb-8 text-3xl font-bold">{title}</h1>
                 <SearchBar defaultValue={searchDefaultValue} />
             </div>
