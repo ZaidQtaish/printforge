@@ -33,6 +33,7 @@ export type CategoryPageProps = {
 export type ModelsGridProps = {
     title: string
     models: Model[]
+    searchDefaultValue?: string
 }
 
 export type NavButtonProps = {
@@ -40,4 +41,8 @@ export type NavButtonProps = {
     children: ReactNode
     isActive: boolean
     variant?: "header" | "sidebar"
+}
+
+export type SearchParams = {
+    [key: string]: string | undefined
 }
